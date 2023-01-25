@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Inch (Skyguide) -->
+<!--
+ Scrinch is a stand-alone Swing application that helps managing your
+ projects based on the Agile principles.
+ Copyright (C) 2007  Julien Piaser, Jerome Layat, Peter Fluekiger,
+ Christian Lebaudy, Jean-Marc Borer
+
+ Scrinch is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Scrinch is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="scrinch-env">
+        <xs:annotation>
+            <xs:documentation>Comment describing your root element</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="backlogs" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="product-backlog" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="item-set" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element ref="item-link" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="name" type="xs:string" use="required"/>
+                                                <xs:attribute name="archive" type="xs:boolean" use="optional" default="false"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required"/>
+                                    <xs:attribute name="description" type="xs:string" use="optional"/>
+                                    <xs:attribute name="start-date" type="xs:date" use="optional"/>
+                                    <xs:attribute name="end-date" type="xs:date" use="optional"/>
+                                    <xs:attribute name="maintenance-product-backlog" type="xs:boolean" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sprints" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sprint" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="velocity" type="xs:double"/>
+                                        <xs:element name="starting-date" type="xs:date"/>
+                                        <xs:element name="end-date" type="xs:date"/>
+                                        <xs:element name="todo" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="item-link" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="team" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>deprecated : use sprint-team instead</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="member-link" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="slow-downs" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="slow-down" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="member-link" type="xs:string" maxOccurs="unbounded"/>
+                                                                <xs:element name="description" type="xs:string"/>
+                                                                <xs:element name="cost" type="xs:double"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="planning-report" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="format" type="xs:string" default="text"/>
+                                                        <xs:attribute name="encoding" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="daily-notes" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="format" type="xs:string" default="text"/>
+                                                        <xs:attribute name="encoding" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="review-report" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="format" type="xs:string" default="text"/>
+                                                        <xs:attribute name="encoding" type="xs:string"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="sprint-team" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="member-link" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="duration-in-weeks" type="xs:int" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="items" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="item" type="itemType" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="people" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>deprecated : use members instead</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="member" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:complexContent>
+                                        <xs:extension base="memberType">
+                                            <xs:attribute name="active" type="xs:boolean" default="true"/>
+                                        </xs:extension>
+                                    </xs:complexContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="targets" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="target" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:complexContent>
+                                        <xs:extension base="targetType">
+                                            <xs:attribute name="active" type="xs:boolean" default="true"/>
+                                        </xs:extension>
+                                    </xs:complexContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="members" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="member" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:complexContent>
+                                        <xs:extension base="memberType">
+                                            <xs:attribute name="active" type="xs:boolean" default="true"/>
+                                        </xs:extension>
+                                    </xs:complexContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="workTypes" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="workType" minOccurs="0" maxOccurs="10">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="label" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="originTypes" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="originType" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="label" type="xs:string"/>
+                                        <xs:element name="description" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="preferences" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="burn-up-chart" type="xs:boolean" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="itemType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="request-type" type="xs:string" minOccurs="0"/>
+            <xs:element name="work-type" type="xs:string" minOccurs="0"/>
+            <xs:element name="business-value" type="xs:int" minOccurs="0"/>
+            <xs:element name="work" type="xs:int" minOccurs="0"/>
+            <xs:element name="target" type="xs:string" minOccurs="0"/>
+            <xs:element name="visas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="visa" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="status" type="xs:string"/>
+                                    <xs:element name="date" type="xs:date" minOccurs="0"/>
+                                    <xs:element name="member-nickname" type="xs:string" minOccurs="0"/>
+                                    <xs:element name="comment" type="xs:string" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="item-link" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>ID of the corresponding item</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="memberType">
+        <xs:sequence>
+            <xs:element name="nickname" type="xs:string"/>
+            <xs:element name="mobile-phone" type="xs:string" minOccurs="0"/>
+            <xs:element name="internal-phone" type="xs:string" minOccurs="0"/>
+            <xs:element name="fullname" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="targetType">
+        <xs:sequence>
+            <xs:element name="label" type="xs:string"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="cfoDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Deprecated : replaced by deadline</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="deadline" type="xs:date" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

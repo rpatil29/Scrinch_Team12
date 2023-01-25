@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scrinch-env>
+    <backlogs>
+        <product-backlog name="Battles" start-date="2008-04-21"
+            end-date="2008-09-01" maintenance-product-backlog="false">
+            <item-set name="Army" archive="false">
+                <item-link>26</item-link>
+                <item-link>12</item-link>
+                <item-link>10</item-link>
+                <item-link>11</item-link>
+                <item-link>8</item-link>
+                <item-link>9</item-link>
+            </item-set>
+            <item-set name="Politics" archive="false">
+                <item-link>13</item-link>
+                <item-link>14</item-link>
+            </item-set>
+        </product-backlog>
+        <product-backlog name="Pop" description=""
+            start-date="2008-04-21" end-date="2008-09-25" maintenance-product-backlog="false">
+            <item-set name="Choregraphy" archive="false">
+                <item-link>7</item-link>
+                <item-link>5</item-link>
+                <item-link>6</item-link>
+            </item-set>
+            <item-set name="Songs" archive="false">
+                <item-link>3</item-link>
+                <item-link>2</item-link>
+                <item-link>0</item-link>
+                <item-link>22</item-link>
+                <item-link>4</item-link>
+            </item-set>
+            <item-set name="ProjectItemSet #2" archive="false"/>
+        </product-backlog>
+        <product-backlog name="Sing a french song"
+            start-date="1969-12-31" end-date="1969-12-31" maintenance-product-backlog="true">
+            <item-set name="Real work" archive="false">
+                <item-link>19</item-link>
+                <item-link>20</item-link>
+                <item-link>18</item-link>
+                <item-link>25</item-link>
+            </item-set>
+            <item-set name="TV" archive="false">
+                <item-link>16</item-link>
+                <item-link>17</item-link>
+            </item-set>
+        </product-backlog>
+        <product-backlog name="Sing a song" description=""
+            start-date="2008-09-01" end-date="2009-03-02" maintenance-product-backlog="false">
+            <item-set name="Work" archive="false">
+                <item-link>23</item-link>
+                <item-link>24</item-link>
+                <item-link>15</item-link>
+            </item-set>
+        </product-backlog>
+    </backlogs>
+    <sprints duration-in-weeks="2">
+        <sprint name="Sprint #0">
+            <velocity>10.0</velocity>
+            <starting-date>2011-07-25</starting-date>
+            <end-date>2011-08-05</end-date>
+            <todo>
+                <item-link>19</item-link>
+                <item-link>20</item-link>
+                <item-link>18</item-link>
+                <item-link>25</item-link>
+            </todo>
+            <slow-downs>
+                <slow-down>
+                    <member-link>TheEmperor</member-link>
+                    <member-link>TheImpossiblePrince</member-link>
+                    <member-link>TheKingOfPop</member-link>
+                    <member-link>TheOperaQueen</member-link>
+                    <description></description>
+                    <cost>1.0</cost>
+                </slow-down>
+                <slow-down>
+                    <member-link>TheKingOfPop</member-link>
+                    <description>Holidays</description>
+                    <cost>1.25</cost>
+                </slow-down>
+                <slow-down>
+                    <member-link>TheImpossiblePrince</member-link>
+                    <member-link>TheKingOfPop</member-link>
+                    <description>not here</description>
+                    <cost>2.5</cost>
+                </slow-down>
+            </slow-downs>
+            <sprint-team>
+                <member-link>TheEmperor</member-link>
+                <member-link>TheImpossiblePrince</member-link>
+                <member-link>TheKingOfPop</member-link>
+                <member-link>TheOperaQueen</member-link>
+            </sprint-team>
+        </sprint>
+        <sprint name="Future sprint">
+            <velocity>10.0</velocity>
+            <starting-date>2010-07-05</starting-date>
+            <end-date>2010-07-09</end-date>
+            <todo>
+                <item-link>15</item-link>
+            </todo>
+            <slow-downs/>
+            <sprint-team>
+                <member-link>TheEmperor</member-link>
+                <member-link>TheImpossiblePrince</member-link>
+                <member-link>TheKingOfPop</member-link>
+                <member-link>TheOperaQueen</member-link>
+            </sprint-team>
+        </sprint>
+        <sprint name="Third sprint">
+            <velocity>10.0</velocity>
+            <starting-date>2008-05-05</starting-date>
+            <end-date>2008-05-09</end-date>
+            <todo>
+                <item-link>16</item-link>
+                <item-link>18</item-link>
+            </todo>
+            <slow-downs>
+                <slow-down>
+                    <member-link>TheKingOfPop</member-link>
+                    <member-link>TheOperaQueen</member-link>
+                    <member-link>TheImpossiblePrince</member-link>
+                    <member-link>TheEmperor</member-link>
+                    <description>Holidays</description>
+                    <cost>1.0</cost>
+                </slow-down>
+            </slow-downs>
+            <sprint-team>
+                <member-link>TheEmperor</member-link>
+                <member-link>TheImpossiblePrince</member-link>
+                <member-link>TheKingOfPop</member-link>
+                <member-link>TheOperaQueen</member-link>
+            </sprint-team>
+        </sprint>
+        <sprint name="Second sprint">
+            <velocity>10.0</velocity>
+            <starting-date>2008-04-28</starting-date>
+            <end-date>2008-05-02</end-date>
+            <todo>
+                <item-link>10</item-link>
+                <item-link>11</item-link>
+                <item-link>7</item-link>
+                <item-link>5</item-link>
+                <item-link>3</item-link>
+                <item-link>0</item-link>
+                <item-link>17</item-link>
+                <item-link>14</item-link>
+            </todo>
+            <slow-downs>
+                <slow-down>
+                    <member-link>TheImpossiblePrince</member-link>
+                    <description>Interview</description>
+                    <cost>5.0</cost>
+                </slow-down>
+            </slow-downs>
+            <sprint-team>
+                <member-link>TheEmperor</member-link>
+                <member-link>TheImpossiblePrince</member-link>
+                <member-link>TheKingOfPop</member-link>
+                <member-link>TheOperaQueen</member-link>
+            </sprint-team>
+        </sprint>
+        <sprint name="First sprint">
+            <velocity>10.0</velocity>
+            <starting-date>2008-04-21</starting-date>
+            <end-date>2008-04-25</end-date>
+            <todo>
+                <item-link>11</item-link>
+                <item-link>0</item-link>
+                <item-link>5</item-link>
+                <item-link>2</item-link>
+                <item-link>8</item-link>
+                <item-link>9</item-link>
+                <item-link>13</item-link>
+            </todo>
+            <slow-downs>
+                <slow-down>
+                    <member-link>TheKingOfPop</member-link>
+                    <description>Concert</description>
+                    <cost>1.0</cost>
+                </slow-down>
+            </slow-downs>
+            <planning-report format="text" encoding="UTF-8">The+King+Of+Pop+is+Michael+%21</planning-report>
+            <sprint-team>
+                <member-link>TheEmperor</member-link>
+                <member-link>TheImpossiblePrince</member-link>
+                <member-link>TheKingOfPop</member-link>
+                <member-link>TheOperaQueen</member-link>
+            </sprint-team>
+        </sprint>
+        <sprint name="Old sprint">
+            <velocity>10.0</velocity>
+            <starting-date>2008-04-14</starting-date>
+            <end-date>2008-04-18</end-date>
+            <todo>
+                <item-link>20</item-link>
+                <item-link>22</item-link>
+            </todo>
+            <slow-downs/>
+            <sprint-team>
+                <member-link>TheEmperor</member-link>
+                <member-link>TheImpossiblePrince</member-link>
+                <member-link>TheKingOfPop</member-link>
+                <member-link>TheOperaQueen</member-link>
+            </sprint-team>
+        </sprint>
+    </sprints>
+    <items>
+        <item>
+            <id>0</id>
+            <title>Second song</title>
+            <description>The Way You Make Me Feel</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>5</business-value>
+            <work>8</work>
+            <target>Bad</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-05-01</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>2</id>
+            <title>Third song</title>
+            <description>Speed demon</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>8</business-value>
+            <work>5</work>
+            <target>Bad</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-23</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-23</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>3</id>
+            <title>Song 4</title>
+            <description>liberian girl</description>
+            <request-type>New req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>8</business-value>
+            <work>5</work>
+            <target>Bad</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-28</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>4</id>
+            <title>Song 5</title>
+            <description>Rock around the clock</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>5</business-value>
+            <work>3</work>
+            <target>Bad</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>CNL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>5</id>
+            <title>Bad clip design</title>
+            <description>Design choregraphy</description>
+            <request-type>Original req</request-type>
+            <work-type>Analysis</work-type>
+            <business-value>8</business-value>
+            <work>5</work>
+            <target>Pop concert</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>NOK</status>
+                    <date>2008-04-29</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment>Too weak</comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>6</id>
+            <title>Dancers selection</title>
+            <description>Select dancers</description>
+            <request-type>Original req</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>5</business-value>
+            <work>8</work>
+            <target>Pop concert</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>7</id>
+            <title>Bad clip design time</title>
+            <description>Clip is too long</description>
+            <request-type>Tuning</request-type>
+            <work-type>Analysis</work-type>
+            <business-value>5</business-value>
+            <work>3</work>
+            <target>Pop concert</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>8</id>
+            <title>Soldiers count</title>
+            <description>Count all soldiers</description>
+            <request-type>Original req</request-type>
+            <work-type>Doc</work-type>
+            <business-value>8</business-value>
+            <work>8</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-21</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-21</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>9</id>
+            <title>Majors</title>
+            <description>Choose generals and captains</description>
+            <request-type>Original req</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>5</business-value>
+            <work>5</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>10</id>
+            <title>Horses</title>
+            <description>Missing horses to be found</description>
+            <request-type>Bug</request-type>
+            <work-type>Analysis</work-type>
+            <business-value>13</business-value>
+            <work>3</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>11</id>
+            <title>Sun and fog</title>
+            <description>Find a strategy using the sun and fog properties of the terrain.</description>
+            <request-type>New req</request-type>
+            <work-type>Analysis</work-type>
+            <business-value>13</business-value>
+            <work>3</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>12</id>
+            <title>Ennemies position</title>
+            <description>Find ennemies positions</description>
+            <request-type>New req</request-type>
+            <work-type>Doc</work-type>
+            <business-value>5</business-value>
+            <work>8</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>13</id>
+            <title>Murat</title>
+            <description>Make Murat a king to ensure his support</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>5</business-value>
+            <work>8</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>OK</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>14</id>
+            <title>Taliran</title>
+            <description>Send Taliran to jail</description>
+            <request-type>Bug</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>21</business-value>
+            <work>2</work>
+            <target>Austerlitz</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>PP</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment>After Waterloo</comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>15</id>
+            <title>Queen of the night</title>
+            <description>Learn how to sing the "Queen of the Night" (Magic Flute from Mozart). NB : see extract from Foster Jenkins on YouTube !!</description>
+            <request-type>Original req</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>1</business-value>
+            <work>21</work>
+            <target>Concert</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheOperaQueen</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>16</id>
+            <title>Sunglasses</title>
+            <description>Find out correct sunglasses to show off on TV</description>
+            <request-type>Bug</request-type>
+            <work-type>Tech Dev</work-type>
+            <business-value>2</business-value>
+            <work>8</work>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>17</id>
+            <title>Song</title>
+            <description>Choose a nice children's music and put some... random phrases on it</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>1</business-value>
+            <work>3</work>
+            <target>Pop concert</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-05-02</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>18</id>
+            <title>Classical song</title>
+            <description>Find out an easy classical song to join in with Foster Jenkins</description>
+            <request-type>New req</request-type>
+            <work-type>Analysis</work-type>
+            <business-value>2</business-value>
+            <work>3</work>
+            <target>Concert</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-24</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-05-06</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>19</id>
+            <title>Famous</title>
+            <description>Become famous in the USA</description>
+            <request-type>Bug</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>13</business-value>
+            <work>0</work>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2011-07-23</date>
+                    <member-nickname>TheEmperor</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>20</id>
+            <title>Be loved</title>
+            <description>Try to be loved by the french people</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>2</business-value>
+            <work>5</work>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-25</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>22</id>
+            <title>Second song</title>
+            <description>Baby Be Mine</description>
+            <request-type>Original req</request-type>
+            <work-type>Business Dev</work-type>
+            <business-value>5</business-value>
+            <work>13</work>
+            <target>Thriller</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-14</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-15</date>
+                    <member-nickname>TheKingOfPop</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>23</id>
+            <title>Don Giovanni</title>
+            <description>Most beautiful opera by Mozart</description>
+            <request-type>Original req</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>1</business-value>
+            <work>21</work>
+            <target>Never</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-25</date>
+                    <member-nickname>TheOperaQueen</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>24</id>
+            <title>Fidelio</title>
+            <description>Mozart's concurrent's opera ;-)</description>
+            <request-type>Original req</request-type>
+            <work-type>Tech Operation</work-type>
+            <business-value>1</business-value>
+            <work>21</work>
+            <target>Never</target>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-25</date>
+                    <member-nickname>TheOperaQueen</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>25</id>
+            <title>Wait and see</title>
+            <description>Being inspired by nature</description>
+            <request-type>Original req</request-type>
+            <work-type>Analysis</work-type>
+            <business-value>1</business-value>
+            <work>21</work>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+                <visa>
+                    <status>EVAL</status>
+                    <date>2008-04-25</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>DONE</status>
+                    <date>2008-04-29</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+                <visa>
+                    <status>OK</status>
+                    <date>2008-04-29</date>
+                    <member-nickname>TheImpossiblePrince</member-nickname>
+                    <comment></comment>
+                </visa>
+            </visas>
+        </item>
+        <item>
+            <id>26</id>
+            <title>Asta fire</title>
+            <description>Do the rasta</description>
+            <request-type>New req</request-type>
+            <work-type>Doc</work-type>
+            <business-value>5</business-value>
+            <work>8</work>
+            <visas>
+                <visa>
+                    <status>STBY</status>
+                </visa>
+            </visas>
+        </item>
+    </items>
+    <targets>
+        <target active="true">
+            <label>Austerlitz</label>
+            <deadline>2005-12-02</deadline>
+        </target>
+        <target active="true">
+            <label>Thriller</label>
+            <deadline>2008-04-24</deadline>
+        </target>
+        <target active="true">
+            <label>Never</label>
+            <deadline>2008-04-25</deadline>
+        </target>
+        <target active="true">
+            <label>Pop concert</label>
+            <description></description>
+            <deadline>2008-07-10</deadline>
+        </target>
+        <target active="true">
+            <label>Bad</label>
+            <deadline>2008-10-08</deadline>
+        </target>
+        <target active="true">
+            <label>Concert</label>
+            <deadline>2009-01-01</deadline>
+        </target>
+        <target active="false">
+            <label>Waterloo</label>
+            <description>Should never come</description>
+            <deadline>2008-04-24</deadline>
+        </target>
+    </targets>
+    <members>
+        <member active="true">
+            <nickname>TheEmperor</nickname>
+            <fullname>Napoleon Bonaparte</fullname>
+        </member>
+        <member active="true">
+            <nickname>TheImpossiblePrince</nickname>
+            <fullname>Pascal Obispo</fullname>
+        </member>
+        <member active="true">
+            <nickname>TheKingOfPop</nickname>
+            <internal-phone></internal-phone>
+            <fullname>Jackson Michael</fullname>
+        </member>
+        <member active="true">
+            <nickname>TheOperaQueen</nickname>
+            <fullname>Florence Foster Jenkins</fullname>
+        </member>
+        <member active="false">
+            <nickname>TheUselessOne</nickname>
+            <fullname>Big Lebowski</fullname>
+        </member>
+    </members>
+    <workTypes>
+        <workType>
+            <label>Analysis</label>
+        </workType>
+        <workType>
+            <label>Business Dev</label>
+        </workType>
+        <workType>
+            <label>Doc</label>
+        </workType>
+        <workType>
+            <label>Tech Dev</label>
+        </workType>
+        <workType>
+            <label>Tech Operation</label>
+        </workType>
+    </workTypes>
+    <originTypes>
+        <originType>
+            <label>Bug</label>
+        </originType>
+        <originType>
+            <label>New req</label>
+        </originType>
+        <originType>
+            <label>Original req</label>
+        </originType>
+        <originType>
+            <label>Tuning</label>
+        </originType>
+    </originTypes>
+    <preferences>
+        <burn-up-chart>true</burn-up-chart>
+    </preferences>
+</scrinch-env>

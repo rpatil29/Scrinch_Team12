@@ -1,0 +1,8 @@
+Release 1.1.2_MAESTRO (is in the way)
+# Allowing fibo points from 0 to 34
+# BV and workload undefined removed when values are configured
+# Bugfixes
+
+Release 1.1.1_CHOPIN
+#1316 Creating sprint : when no sprints were visible, creating a new sprint was not possible.
+#1317 PDF export of sprint : Exporting SBY tasks generated an exception.

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property environment="env"/>
+  <property name="classpath.compile" refid="maven.compile.classpath"/>
+  <echo file="/Users/kevinagary/work/asu/classes/ser516/ser516public/sampletools/scrinch/application/target/dist/scrinch.bat" append="false">start javaw -Xmx128m -jar scrinch-1.2-RACHMANINOV.jar</echo>
+</target>
+</project>
